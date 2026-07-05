@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>技術ニュース</title>
+<style>
+body { max-width:900px; margin:2em auto; padding:0 1em; font:16px/1.6 -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", sans-serif; color:#1a1a1a; background:#fafafa; }
+a { color:#2563eb; text-decoration:none; } a:hover { text-decoration:underline; }
+h1 { border-bottom:2px solid #e5e7eb; padding-bottom:0.3em; }
+h2 { margin-top:1.5em; color:#374151; }
+h3 { color:#4b5563; }
+table { border-collapse:collapse; width:100%; margin:1em 0; }
+th, td { border:1px solid #d1d5db; padding:8px 12px; text-align:left; }
+th { background:#f3f4f6; }
+code { background:#e5e7eb; padding:2px 6px; border-radius:4px; font-size:0.9em; }
+pre { background:#1e293b; color:#e2e8f0; padding:1em; border-radius:6px; overflow-x:auto; }
+pre code { background:none; padding:0; }
+.meta { color:#6b7280; font-size:0.85em; margin-bottom:2em; }
+.nav { margin-bottom:2em; }
+.nav a { margin-right:1em; }
+blockquote { border-left:3px solid #d1d5db; margin-left:0; padding-left:1em; color:#4b5563; }
+@media (prefers-color-scheme:dark) {
+  body { color:#e2e8f0; background:#0f172a; }
+  a { color:#60a5fa; }
+  h2 { color:#cbd5e1; }
+  th { background:#1e293b; }
+  th, td { border-color:#334155; }
+  code { background:#334155; }
+  pre { background:#0f172a; }
+  blockquote { border-color:#475569; color:#94a3b8; }
+}
+</style>
+</head>
+<body>
+<div class="nav"><a href="/hermes-reports/">← インデックス</a></div>
+<h1>技術ニュース</h1>
+<div class="meta">更新: 2026-07-05 17:33 JST</div>
+<h1>Tech Briefing 2026-07-05</h1>
+<h2>Top Stories</h2>
+<ul>
+<li>
+<p><strong>[Alibaba to ban Claude Code in workplace over alleged backdoor risks]</strong> (Reuters, HN 331pts) - Alibaba joins the enterprise AI trust crisis, banning Claude Code internally amid reports of potential backdoors. Follows yesterday's 26K-user MCP skill attack.</p>
+</li>
+<li>
+<p><strong>[Command &amp; Conquer Generals ported to macOS/iOS/iPad using Fable]</strong> (GitHub, HN 546pts) - Full native game engine port accomplished via Anthropic's Fable coding agent, demonstrating AI-assisted cross-platform game development at production quality.</p>
+</li>
+<li>
+<p><strong>[GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance]</strong> (GitHub/OpenAI, HN 254pts) - Users report quality regressions in Codex, suspecting token-level optimizations are hurting reasoning depth. Growing thread on the issue tracker.</p>
+</li>
+<li>
+<p><strong>[sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)]</strong> (Simon Willison, HN 27pts) - Simon Willison's latest release was primarily AI-generated. The cost-to-output ratio keeps dropping: a major Python utility for ~$150.</p>
+</li>
+<li>
+<p><strong>[Shadcn/UI now defaults to Base UI instead of Radix]</strong> (shadcn.com, HN 102pts) - The most popular React component collection drops Radix primitives for MUI's Base UI. Major ecosystem shift for the React headless component space.</p>
+</li>
+<li>
+<p><strong>[Leanstral 1.5: Proof abundance for all]</strong> (Mistral, HN 363pts) - Mistral's newest model release, continuing their push toward accessible open-weight models.</p>
+</li>
+<li>
+<p><strong>[Performance per dollar is getting faster and cheaper — GLM52 on AMD]</strong> (Wafer.ai, HN 350pts) - Benchmarking shows inference cost-performance improving rapidly, with AMD hardware closing the gap.</p>
+</li>
+<li>
+<p><strong>[Wordgard: In-browser rich-text editor from the creator of ProseMirror]</strong> (HN 325pts) - Marijn Haverbeke's new editor project. New approach to browser-based rich text editing from the author of ProseMirror and CodeMirror.</p>
+</li>
+<li>
+<p><strong>[Jamesob's guide to running SOTA LLMs locally]</strong> (GitHub, HN 398pts) - Comprehensive guide to self-hosting frontier models. Practical resource for the local-first AI crowd.</p>
+</li>
+<li>
+<p><strong>[Valve open-sources Steam Machine e-ink screen]</strong> (GamingOnLinux, HN 594pts) - Valve releases hardware designs and firmware, continuing their open-source hardware push.</p>
+</li>
+</ul>
+<h2>Packages &amp; Repos</h2>
+<ul>
+<li>
+<p><strong>npm download leaders (last week)</strong>: esbuild 237M, TypeScript 212M, Vite 147M, ESLint 135M, Tailwind CSS 118M, Prettier 115M, Rolldown 68.9M, tsx 68.2M, Vitest 67.9M, @modelcontextprotocol/sdk 43.1M, Next.js 38.2M, Effect 26.2M, @anthropic-ai/sdk 22.9M, turbo 16.2M, @openai/codex 10.4M, @biomejs/biome 9.7M, bun 2.4M, wasm-pack 57K, oxc 2.3K</p>
+</li>
+<li>
+<p><strong>@modelcontextprotocol/sdk hits 43M/week</strong> — The MCP SDK now has more weekly downloads than Next.js (38M). Agent infrastructure is being adopted at framework-scale velocity. MCP is becoming the de facto standard for agent-tool communication.</p>
+</li>
+<li>
+<p><strong>oxc (2.3K/week) vs rolldown (68.9M/week)</strong> — The Rust-JS toolchain adoption curve is wildly uneven. Bundlers won (rolldown, esbuild, swc all massive), but Rust-based linters/formatters via npm are still niche. @biomejs/biome at 9.7M is the exception proving there's demand when packaged right.</p>
+</li>
+<li>
+<p><strong>wasm-pack at 57K/week</strong> — WASM tooling remains a niche with dedicated users but hasn't crossed into mainstream npm usage. The WASM-in-JS story is still unfolding.</p>
+</li>
+<li>
+<p><strong>tsx at 68.2M/week</strong> — The TypeScript executor (esbuild-powered ts-node replacement) is now neck-and-neck with Vitest. Run-TypeScript-directly is a solved problem.</p>
+</li>
+</ul>
+<h2>@mizchi Relevant</h2>
+<p>(WASM, compiler, agent, infra lens)</p>
+<ul>
+<li>
+<p><strong>🤖 AI Agent Trust Crisis Intensifies</strong>: 48 hours, two massive stories: yesterday a malicious MCP skill bypassed all scanners (26K users), today Alibaba bans Claude Code over backdoor fears. Meanwhile, Fable ships production code (sqlite-utils 4.0, C&amp;C Generals port). The gap between "what AI agents can build" and "can enterprises trust them" is widening into a chasm. Expect regulation + security tooling to be the next wave.</p>
+</li>
+<li>
+<p><strong>🎨 React Component Infrastructure Shift</strong>: Shadcn/UI dropping Radix for Base UI is the biggest React primitive-layer change since... Radix became default. This affects thousands of projects. Base UI (MUI's headless library) vs Radix vs React Aria — the headless component wars are heating up.</p>
+</li>
+<li>
+<p><strong>📊 Agent Protocol Wars</strong>: @modelcontextprotocol/sdk at 43M/week is staggering. MCP is winning the agent-tool protocol race by sheer adoption velocity. For infra builders: the window to propose alternatives is closing fast.</p>
+</li>
+<li>
+<p><strong>🧠 AI-Generated Code Economics</strong>: $149 for a major Python utility release. A game engine ported to three platforms. The economics of AI-assisted coding are genuinely transformative — but the quality/trust questions (Codex degradation reports, Claude Code backdoor fears) represent the other side of the coin.</p>
+</li>
+<li>
+<p><strong>✍️ Editor Infrastructure</strong>: Wordgard from the ProseMirror/CodeMirror author is worth tracking. Marijn Haverbeke has defined browser-based editing for a decade — his new approach matters for anyone building editor tooling.</p>
+</li>
+<li>
+<p><strong>📈 Frontend toolchain metrics to watch</strong>: Rolldown (68.9M) growing into Rollup's replacement, tsx (68.2M) as the new standard TypeScript runner, MCP SDK (43M) as the agent protocol layer. The npm top-20 tells the story of where frontend infra is heading.</p>
+</li>
+</ul>
+<h2>Tweet Idea</h2>
+<blockquote>
+<p>48 hours in AI coding: Alibaba banned Claude Code (backdoor fears), a malicious MCP skill hit 26K users, and GPT-5.5 Codex is reportedly degrading. But sqlite-utils 4.0 was written by Fable for $149 and C&amp;C Generals just got ported to iOS by AI. We're building faster than we're securing — and the results are both incredible and terrifying.</p>
+</blockquote>
+<h1>Tech Briefing 2026-07-04</h1>
+<ul>
+<li>
+<p><strong>[Potential session/cache leakage between workspace instances in Claude Code]</strong> (HN, 156pts) - Anthropic's Claude Code has a reported security issue where session data may leak between workspaces or consumer accounts. <a href="https://github.com/anthropics/claude-code/issues/74066">GitHub issue</a></p>
+</li>
+<li>
+<p><strong>[The bottleneck might be the air in the room]</strong> (HN, 612pts) - CO2 levels directly impair cognitive performance and decision-making; the article argues indoor air quality is an underappreciated bottleneck in knowledge work.</p>
+</li>
+<li>
+<p><strong>[Explanation of everything you can see in htop/top on Linux]</strong> (HN, 189pts) - Deep visual walkthrough of every metric and field in htop/top, from load average to memory types.</p>
+</li>
+<li>
+<p><strong>[Maybe you should learn something]</strong> (HN, 310pts) - Essay arguing for the value of deep learning and understanding fundamentals in an era of quick AI answers.</p>
+</li>
+<li>
+<p><strong>[Anthropic Issued with a Cease and Desist]</strong> (HN) - Privacy-focused legal action against Anthropic over data practices.</p>
+</li>
+<li>
+<p><strong>[Fake AI Agent Skill Slipped Past Every Scanner, Reached 26,000 Users]</strong> (CSO Online) - Malicious MCP/agent skill bypassed all security scanners, raising concerns about AI agent supply chain safety.</p>
+</li>
+<li>
+<p><strong>[Warner bill would create federally vetted list for secure, trustworthy AI agents]</strong> (CyberScoop) - U.S. Senate drafting the "AI Agent Act" to establish a federal registry for vetted AI agents.</p>
+</li>
+</ul>
+<h2>Packages &amp; Repos</h2>
+<ul>
+<li><strong>npm download leaders (last week)</strong>: esbuild 239M, TypeScript 217M, Vite 147M, ESLint 137M, Tailwind 118M, Prettier 117M, Rolldown 69M, Vitest 68M, Next.js 38M, Effect 28M, OpenAI SDK 25M</li>
+<li><strong>Rolldown</strong> (Rust-based bundler, Vite's successor to Rollup) now at 69M weekly downloads — massive growth, indicating Vite 7's move to Rolldown is materializing.</li>
+<li><strong>Zig: All Package Management Functionality Moved from Compiler to Build System</strong> — Zig continues decoupling package management from the compiler, moving it into the build system. <a href="https://ziglang.org/devlog/2026/#2026-06-30">link</a></li>
+</ul>
+<h2>@mizchi Relevant</h2>
+<p>(WASM, compiler, agent, infra lens)</p>
+<ul>
+<li>
+<p><strong>🛡️ AI Agent Security Week</strong>: Multiple stories hitting simultaneously — fake MCP skill bypassing scanners (26K users affected), U.S. Senate drafting AI agent regulation, and new tools emerging (Owthorize for catching destructive agent tool calls, Open Kioku for evidence layers, CTOP for monitoring agents). The agent supply chain security conversation is heating up fast.</p>
+</li>
+<li>
+<p><strong>🔧 Zig decouples package manager from compiler</strong> — Package management moves to the build system, an architectural shift toward cleaner compiler design. Relevant for compiler architecture watchers.</p>
+</li>
+<li>
+<p><strong>🏗️ TypeScript migration via subagents</strong> — "We moved a whole codebase onto TypeScript with a fleet of subagents" — agent-assisted migration patterns emerging. Also: "You don't need Electron to build native apps in TypeScript" and the new fullstack framework "Point0" (Bun + React + TypeScript).</p>
+</li>
+<li>
+<p><strong>⚡ Rolldown hits 69M/week</strong> — The Rust-based bundler replacing Rollup in Vite's pipeline is now a top-10 npm package. Frontend build infrastructure continues its Rust rewrite arc (swc, oxc, rolldown, turbopack).</p>
+</li>
+<li>
+<p><strong>📜 LLVM retrospective</strong> — CACM published "The LLVM Compiler Infrastructure" overview, hitting HN. Good compiler history + architecture read.</p>
+</li>
+<li>
+<p><strong>🤖 Claude Code security</strong> — Session/cache leakage between workspaces (156pts, #4 HN) is the big AI coding tool story of the day.</p>
+</li>
+</ul>
+<h2>Tweet Idea</h2>
+<blockquote>
+<p>AI agent security is having its moment: a malicious MCP skill bypassed every scanner and reached 26K users, the U.S. Senate is drafting an "AI Agent Act," and Claude Code has a session leakage bug (#4 on HN). We're building agent infrastructure faster than we're securing it. 🛡️🤖</p>
+</blockquote>
+</body></html>
